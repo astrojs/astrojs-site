@@ -1,0 +1,6 @@
+<header>
+  <div class="content"></div>
+</header>
+<div id="content">
+  <article class="summary">Astro.js is a place to find awesome javascript resources for astronomy applications.</article>
+</div>
