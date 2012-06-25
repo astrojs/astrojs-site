@@ -2,6 +2,10 @@ a {
   line-height: 18px;
   color: #0071e5;
 }
+.subsection {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
 body {
   background: #f3f3f3;
   margin: 0;
@@ -39,44 +43,97 @@ body #content .tagline {
   font-weight: 700;
   text-align: center;
 }
-body #content .summary .onestep {
-  width: 250px;
-}
-body #content .summary .twostep {
-  width: 500px;
-}
-body #content .summary .block {
+body #content .column {
   float: left;
 }
-body #content .summary .block .title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  padding-bottom: 20px;
+body #content .left {
+  width: 250px;
 }
-body #content .summary .block .snippet {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  padding-right: 20px;
-}
-body #content .summary .block #activity {
-  background: #e1e1e1;
+body #content .left #commits .commit {
+  margin-bottom: 6px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid #c2c2c2;
-  -moz-box-shadow: 0px 1px 0px #fff;
-  -webkit-box-shadow: 0px 1px 0px #fff;
-  box-shadow: 0px 1px 0px #fff;
-  padding: 4px;
-  font-family: "courier", serif;
+  padding: 14px 6px;
   font-size: 11px;
+}
+body #content .left #commits .even {
+  background: #fafafa;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 11px;
+}
+body #content .left #commits .odd {
+  background: #f7f7f7;
+}
+body #content .left #commits .commit {
+  clear: both;
+}
+body #content .left #commits .commit .repository {
+  float: left;
+  color: #171717;
+}
+body #content .left #commits .commit .date {
+  float: right;
+  color: #b2b2b2;
+}
+body #content .left #commits .commit .message {
+  clear: both;
+  display: block;
+  color: #0172e6;
+}
+body #content .left #tweets .tweet {
+  margin-bottom: 6px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 14px 6px;
+  font-size: 11px;
+}
+body #content .left #tweets .even {
+  background: #fafafa;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 11px;
+}
+body #content .left #tweets .odd {
+  background: #f7f7f7;
+}
+body #content .left #tweets .tweet {
+  clear: both;
+}
+body #content .left #tweets .tweet .name {
+  float: left;
+  color: #171717;
+}
+body #content .left #tweets .tweet .date {
+  float: right;
+  color: #b2b2b2;
+}
+body #content .left #tweets .tweet .message {
+  clear: both;
+  display: block;
+  color: #646464;
+}
+body #content .right {
+  width: 750px;
+}
+body #content .right .libraries {
+  padding-left: 40px;
+}
+body #content .right .libraries #libraries a {
+  font-size: 10px;
 }
 body #content #libraries {
   clear: both;
   padding-top: 40px;
+}
+body #content #libraries .library {
+  padding-bottom: 40px;
 }
 body #content #libraries .library header {
   font-family: 'Open Sans', sans-serif;
