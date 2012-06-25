@@ -1,0 +1,9 @@
+<% url = @getUrl() %>
+<article class="activity commit">
+  >>
+  <%= @library %>
+  <%= @date %>
+  <a href="<%= url %>">
+    <%= @message %>
+  </a>
+</article>

@@ -1,0 +1,4 @@
+<article class="library">
+  <header><%= @name %></header>
+  <p><%= @description %></p>
+</article>

@@ -1,10 +1,15 @@
 @import './mixin'
 
+a
+  line-height: 18px
+  color: #0071E5
+
 body
   background: #F3F3F3
   margin: 0
+  font-family: 'Open Sans', sans-serif;
   
-  header
+  header.main
     width: 100%
     background-color: #0071E5
     border-top: 5px solid black
@@ -13,6 +18,7 @@ body
       width: 1000px
       height: 105px
       background-image: url('images/logo.png')
+      
       background-repeat: no-repeat
       background-size: 325px 60px
       margin: 0 auto
@@ -21,13 +27,57 @@ body
   #content
     width: 1000px
     margin: 0 auto
-    margin-top 60px
-    border-top: 1px solid #D3D3D3
-    border-bottom: 1px solid #D3D3D3
-    height: 35px
-    padding-top: 30px
-    padding-bottom: 30px
-    font-family: 'Open Sans Condensed', sans-serif
-    font-size: 30px
-    font-weight: 700
-    text-align: center
+    
+    .tagline
+      font-family: 'Open Sans Condensed', sans-serif
+      margin: 60px 0 60px
+      border-top: 1px solid #D3D3D3
+      border-bottom: 1px solid #D3D3D3
+      height: 35px
+      padding: 30px 0 30px
+      font-size: 30px
+      font-weight: 700
+      text-align: center
+    
+    .summary
+      .onestep
+        width 250px
+      .twostep
+        width 500px
+        
+      .block
+        float left
+        
+        .title
+          font-family: 'Open Sans', sans-serif
+          font-weight: 700
+          font-size: 18px
+          padding-bottom: 20px
+        
+        .snippet
+          font-family: 'Open Sans', sans-serif
+          font-weight: 400
+          font-size: 12px
+          line-height: 18px
+          padding-right: 20px
+        
+        #activity
+          background: #E1E1E1
+          border-radius: 4px
+          border: 1px solid #C2C2C2
+          box-shadow: 0px 1px 0px #FFFFFF
+          padding: 4px
+          font-family: "courier", serif
+          font-size: 11px
+
+    #libraries
+      clear both
+      padding-top: 40px
+      
+      .library
+        
+        header
+          font-family: 'Open Sans', sans-serif
+          font-weight: 700
+          font-size: 18px
+    
