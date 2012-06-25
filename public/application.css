@@ -1,14 +1,18 @@
+a {
+  line-height: 18px;
+  color: #0071e5;
+}
 body {
   background: #f3f3f3;
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-body header {
+body header.main {
   width: 100%;
   background-color: #0071e5;
   border-top: 5px solid #000;
 }
-body header .content {
+body header.main .content {
   width: 1000px;
   height: 105px;
   background-image: url("images/logo.png");
@@ -22,13 +26,57 @@ body #content {
   margin: 0 auto;
 }
 body #content .tagline {
-  margin-top: 60px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 60px 0 60px;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
   height: 35px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0 30px;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+}
+body #content .summary .onestep {
+  width: 250px;
+}
+body #content .summary .twostep {
+  width: 500px;
+}
+body #content .summary .block {
+  float: left;
+}
+body #content .summary .block .title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+body #content .summary .block .snippet {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding-right: 20px;
+}
+body #content .summary .block #activity {
+  background: #e1e1e1;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
+  -moz-box-shadow: 0px 1px 0px #fff;
+  -webkit-box-shadow: 0px 1px 0px #fff;
+  box-shadow: 0px 1px 0px #fff;
+  padding: 4px;
+  font-family: "courier", serif;
+  font-size: 11px;
+}
+body #content #libraries {
+  clear: both;
+  padding-top: 40px;
+}
+body #content #libraries .library header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
 }
