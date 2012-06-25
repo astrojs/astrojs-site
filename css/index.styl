@@ -4,6 +4,9 @@ a
   line-height: 18px
   color: #0071E5
 
+.subsection
+  font-size: 18px
+
 body
   background: #F3F3F3
   margin: 0
@@ -40,42 +43,70 @@ body
       font-weight: 700
       text-align: center
     
-    .summary
-      .onestep
-        width 250px
-      .twostep
-        width 500px
-        
-      .block
-        float left
-        
-        .title
-          font-family: 'Open Sans', sans-serif
-          font-weight: 700
-          font-size: 18px
-          padding-bottom: 20px
-        
-        .snippet
-          font-family: 'Open Sans', sans-serif
-          font-weight: 400
-          font-size: 12px
-          line-height: 18px
-          padding-right: 20px
-        
-        #activity
-          background: #E1E1E1
+    .column
+      float: left
+    
+    .left
+      width: 250px
+    
+      #commits
+        .commit
+          margin-bottom 6px
+          
+        .even
+          background: #FAFAFA
           border-radius: 4px
           border: 1px solid #C2C2C2
           box-shadow: 0px 1px 0px #FFFFFF
           padding: 4px
-          font-family: "courier", serif
           font-size: 11px
+          
+        .odd
+          background: #F7F7F7
+          border-radius: 4px
+          border: 1px solid #C2C2C2
+          box-shadow: 0px 1px 0px #FFFFFF
+          padding: 4px
+          font-size: 11px
+        
+        .commit
+          clear: both
+          
+          .repository
+            float: left
+            color: #171717
+          .date
+            float: right
+            color: #B2B2B2
+          .message
+            clear: both
+            display: block
+            color: #0172E6
+    
+      #tweets
+        background: #E1E1E1
+        border-radius: 4px
+        border: 1px solid #C2C2C2
+        box-shadow: 0px 1px 0px #FFFFFF
+        padding: 4px
+        font-size: 11px
+        
+    .right
+      width: 750px;
+    
+      .libraries
+        padding-left: 40px
+        
+        #libraries
+          a
+            font-size: 10px
 
     #libraries
       clear both
       padding-top: 40px
       
       .library
+        padding-bottom: 40px
         
         header
           font-family: 'Open Sans', sans-serif

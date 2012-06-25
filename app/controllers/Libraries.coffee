@@ -18,7 +18,8 @@ class Libraries extends Spine.Controller
         for repo in repos
           item = new Lib repo
           item.save()
-          @append require('views/lib')(item)
+        repos = Lib.all()
+        @append require('views/libs')(repos)
         @trigger 'retrievedLibraries'
 
     $.ajax(options)

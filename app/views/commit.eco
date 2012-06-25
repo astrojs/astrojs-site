@@ -1,9 +1,8 @@
-<% url = @getUrl() %>
-<article class="activity commit">
-  >>
-  <%= @library %>
-  <%= @date %>
-  <a href="<%= url %>">
-    <%= @message %>
-  </a>
-</article>
+<% for commit, index in @: %>
+  <% style = if index % 2 is 0 then "even" else "odd" %>
+  <article class="commit <%= style %>">
+    <div class="repository"><%= commit.library %></div>
+    <div class="date"><%= commit.getDate() %></div>
+    <a class="message" href="<%= commit.getUrl() %>"><%= commit.message %></a>
+  </article>
+<% end %>

@@ -1,0 +1,8 @@
+<% for project in @: %>
+  <article class="library">
+    <header><%= project.name %></header>
+    <p class="description"><%= project.description %></p>
+    <a href="<%= project.getUrl() %>">on to github</a>
+    <a href="">demo</a>
+  </article>
+<% end %>

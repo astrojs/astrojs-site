@@ -6,7 +6,7 @@ class Tweets extends Spine.Controller
   
   constructor: ->
     super
-    @el = $("#activity")  # Not sure why this is not working as it should
+    @el = $("#tweets")
     @getTweets()
 
   getTweets: ->

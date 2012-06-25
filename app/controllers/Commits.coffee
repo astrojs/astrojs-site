@@ -5,11 +5,14 @@ class Commits extends Spine.Controller
 
   constructor: ->
     super
-    @el = $("#activity")  # Not sure why this is not working as it should
+    @el = $("#commits")
+    @bind 'render', @render
     @getCommits()
   
   getCommits: ->
     libs = Lib.all()
+    number = libs.length
+    count = 0
     for lib in libs
       do (lib) =>
         api_url = "#{lib.url}/commits?per_page=3"
@@ -31,8 +34,14 @@ class Commits extends Spine.Controller
                 sha: commit['sha']
               item = new Commit params
               item.save()
-              @append require('views/commit')(item)
+            count += 1
+            @trigger "render" if count is number
 
         $.ajax(options)
 
+
+  render: ->
+    commits = Commit.all()
+    @append require('views/commit')(commits)
+    
 module.exports = Commits
