@@ -36,12 +36,10 @@ class Commits extends Spine.Controller
               item.save()
             count += 1
             @trigger "render" if count is number
-
         $.ajax(options)
 
-
   render: ->
-    commits = Commit.all()
-    @append require('views/commit')(commits)
+    commits = Commit.sortByDate('date')
+    @append require('views/commits')(commits)
     
 module.exports = Commits

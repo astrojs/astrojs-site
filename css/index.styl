@@ -6,6 +6,7 @@ a
 
 .subsection
   font-size: 18px
+  padding-bottom: 10px
 
 body
   background: #F3F3F3
@@ -52,22 +53,18 @@ body
       #commits
         .commit
           margin-bottom 6px
+          border-radius: 4px
+          padding: 14px 6px
+          font-size: 11px
           
         .even
           background: #FAFAFA
           border-radius: 4px
-          border: 1px solid #C2C2C2
-          box-shadow: 0px 1px 0px #FFFFFF
           padding: 4px
           font-size: 11px
           
         .odd
           background: #F7F7F7
-          border-radius: 4px
-          border: 1px solid #C2C2C2
-          box-shadow: 0px 1px 0px #FFFFFF
-          padding: 4px
-          font-size: 11px
         
         .commit
           clear: both
@@ -84,12 +81,34 @@ body
             color: #0172E6
     
       #tweets
-        background: #E1E1E1
-        border-radius: 4px
-        border: 1px solid #C2C2C2
-        box-shadow: 0px 1px 0px #FFFFFF
-        padding: 4px
-        font-size: 11px
+        .tweet
+          margin-bottom 6px
+          border-radius: 4px
+          padding: 14px 6px
+          font-size: 11px
+
+        .even
+          background: #FAFAFA
+          border-radius: 4px
+          padding: 4px
+          font-size: 11px
+
+        .odd
+          background: #F7F7F7
+
+        .tweet
+          clear: both
+
+          .name
+            float: left
+            color: #171717
+          .date
+            float: right
+            color: #B2B2B2
+          .message
+            clear: both
+            display: block
+            color: #646464
         
     .right
       width: 750px;

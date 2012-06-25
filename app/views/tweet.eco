@@ -1,4 +1,0 @@
-<article class="activity tweet">
-  <%= @text %>
-  <%= @created_at %>
-</article>

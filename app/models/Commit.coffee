@@ -1,6 +1,8 @@
+Activity = require('modules/Activity')
 
 class Commit extends Spine.Model
   @configure 'Commit', 'library', 'author', 'date', 'message', 'sha'
+  @extend Activity
   
   getUrl: -> return "https://github.com/astrojs/#{@library}/commit/#{@sha}"
   
@@ -8,4 +10,5 @@ class Commit extends Spine.Model
     d = new Date(@date)
     [year, month, day] = [d.getFullYear(), d.getMonth() + 1, d.getDate()]
     return "#{year}-#{month}-#{day}"
+  
 module.exports = Commit
