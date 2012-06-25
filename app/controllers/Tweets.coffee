@@ -2,7 +2,7 @@ Tweet  = require('models/Tweet')
 
 class Tweets extends Spine.Controller
   @userUrl = "http://twitter.com/statuses/user_timeline/386330001.json"
-  @mentionsUrl = ""
+  @hashUrl = "https://twitter.com/search/%23dotastro.json"
   
   constructor: ->
     super
