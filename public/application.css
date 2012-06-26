@@ -97,6 +97,9 @@ body #content .left #tweets .tweet {
   padding: 14px 6px;
   font-size: 12px;
 }
+body #content .left #tweets a {
+  text-decoration: none;
+}
 body #content .right {
   width: 750px;
 }
