@@ -1,3 +1,4 @@
+<header class="subsection">Twitter</header>
 <% for tweet, index in @: %>
   <% style = if index % 2 is 0 then "even" else "odd" %>
   <article class="tweet <%= style %>">

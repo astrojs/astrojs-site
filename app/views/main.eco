@@ -2,21 +2,15 @@
   <div class="content"></div>
 </header>
 <div id="content">
-  <article class="tagline">Astro.js is a place to find awesome javascript resources for astronomy applications.</article>
+  <div id="tagline">
+    <article class="tagline">Astro.js is a place to find awesome javascript resources for astronomy applications.</article>
+    <article class="subtext">Astro.js is a space to consolidate all astronomical javascript resources that have been developed and are in current development across various institutions.  It is also an initiative to develop a base set of libraries so that preliminary analyses may be done quickly without leaving the browser.</article>
+  </div>
   <div class="column left">
-    <article class="commits">
-      <header class="subsection">Recent Commits</header>
-      <div id="commits"></div>
-    </article>
-    <article>
-      <header class="subsection">Twitter</header>
-      <div id="tweets"></div>
-    </article>
+    <article id="commits"></article>
+    <article id="tweets"></article>
   </div>
   <div class="column right">
-    <article class="libraries">
-      <header class="subsection">Libraries</header>
-      <div id="libraries"></div>
-    </article>
+    <article id="libraries"></article>
   </div>
 </div>

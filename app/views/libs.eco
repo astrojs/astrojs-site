@@ -1,8 +1,10 @@
-<% for project in @: %>
-  <article class="library">
+<header class="subsection">Libraries</header>
+<% for project, index in @: %>
+  <% style = if index % 2 is 0 then "even" else "odd" %>
+  <article class="library <%= style %>">
     <header><%= project.name %></header>
     <p class="description"><%= project.description %></p>
-    <a href="<%= project.getUrl() %>">on to github</a>
+    <a href="<%= project.getUrl() %>">repository</a>
     <a href="">documentation</a>
     <a href="">demo</a>
   </article>

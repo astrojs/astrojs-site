@@ -1,139 +1,115 @@
 @import './mixin'
 
 a
-  line-height: 18px
-  color: #0071E5
+  line-height 18px
+  color #0071E5
 
 .subsection
-  font-size: 18px
-  padding-bottom: 10px
+  font-size 18px
+  padding-bottom 10px
+
+.even
+  background #FAFAFA
+
+.odd
+  background #F7F7F7
+
+.name
+  float left
+  color #171717
+
+.date
+  float right
+  color #B2B2B2
+  font-size 10px
+
+.message
+  clear both
+  display block
+  color #646464
 
 body
-  background: #F3F3F3
-  margin: 0
-  font-family: 'Open Sans', sans-serif;
+  background #F3F3F3
+  margin 0
+  font-family 'Open Sans', sans-serif;
   
   header.main
-    width: 100%
-    background-color: #0071E5
-    border-top: 5px solid black
+    width 100%
+    background-color #0071E5
+    border-top 5px solid black
     
     .content
-      width: 1000px
-      height: 105px
-      background-image: url('images/logo.png')
-      
-      background-repeat: no-repeat
-      background-size: 325px 60px
-      margin: 0 auto
-      margin-top: 45px
+      width 1000px
+      height 105px
+      background-image url('images/logo.png')
+      background-repeat no-repeat
+      background-size 325px 60px
+      margin 0 auto
+      margin-top 45px
       
   #content
-    width: 1000px
-    margin: 0 auto
+    width 1000px
+    margin 0 auto
     
-    .tagline
-      font-family: 'Open Sans Condensed', sans-serif
-      margin: 60px 0 60px
-      border-top: 1px solid #D3D3D3
-      border-bottom: 1px solid #D3D3D3
-      box-shadow: inset 0 1px 0 #FFF, 0 1px 0 #FFF
-      height: 35px
-      padding: 30px 0 30px
-      font-size: 30px
-      font-weight: 700
-      text-align: center
+    #tagline
+      margin 60px 0 60px
+      border-top 1px solid #D3D3D3
+      border-bottom 1px solid #D3D3D3
+      box-shadow inset 0 1px 0 #FFF, 0 1px 0 #FFF
+      padding 30px 0 30px
+      text-align center
+      
+      .tagline
+        font-family 'Open Sans Condensed', sans-serif
+        font-size 30px
+        font-weight 700
+        color #1E1E1E
+        
+      .subtext
+        font-size 13px
+        color #646464
     
     .column
-      float: left
+      float left
     
     .left
-      width: 250px
+      width 250px
     
       #commits
-        .commit
-          margin-bottom 6px
-          border-radius: 4px
-          padding: 14px 6px
-          font-size: 11px
-          
-        .even
-          background: #FAFAFA
-          border-radius: 4px
-          padding: 4px
-          font-size: 11px
-          
-        .odd
-          background: #F7F7F7
+        padding-bottom 30px
         
         .commit
-          clear: both
+          clear both
+          border-radius 4px
+          padding 18px 5px 18px 18px
+          font-size 12px
           
-          .repository
-            float: left
-            color: #171717
-          .date
-            float: right
-            color: #B2B2B2
           .message
-            clear: both
-            display: block
-            color: #0172E6
+            color #0172E6
     
       #tweets
         .tweet
-          margin-bottom 6px
-          border-radius: 4px
-          padding: 14px 6px
-          font-size: 11px
-
-        .even
-          background: #FAFAFA
-          border-radius: 4px
-          padding: 4px
-          font-size: 11px
-
-        .odd
-          background: #F7F7F7
-
-        .tweet
-          clear: both
-
-          .name
-            float: left
-            color: #171717
-          .date
-            float: right
-            color: #B2B2B2
-          .message
-            clear: both
-            display: block
-            color: #646464
+          clear both
+          border-radius 4px
+          padding 14px 6px
+          font-size 12px
         
     .right
-      width: 750px;
+      width 750px
     
-      .libraries
-        padding-left: 40px
+      #libraries
+        padding-left 20px
         
-        #libraries
-          a
-            font-size: 10px
-
-    #libraries
-      clear both
-      padding-top: 40px
-      
-      .library
-        padding-bottom: 40px
+        a
+          font-size 10px
         
-        header
-          font-family: 'Open Sans', sans-serif
-          font-weight: 700
-          font-size: 18px
+        .library
+          padding 20px
+          font-weight 400
           
-        p.description
-          font-family: 'Open Sans', sans-serif
-          font-weight: 400
-          font-size: 12px
-          line-height: 18px
+          header
+            font-size 15px
+          
+          p.description
+            font-size 12px
+            line-height 18px

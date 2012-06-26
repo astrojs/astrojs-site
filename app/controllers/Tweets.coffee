@@ -31,7 +31,6 @@ class Tweets extends Spine.Controller
                 created_at: tweet['created_at']
               item = new Tweet params
               item.save()
-              @append require('views/tweets')(item)
             count += 1
             @trigger "render" if count is Tweets.numFeeds
         
