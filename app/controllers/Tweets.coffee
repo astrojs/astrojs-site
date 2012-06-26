@@ -2,8 +2,10 @@ Tweet  = require('models/Tweet')
 
 class Tweets extends Spine.Controller
   @feeds =
-    astrojs:  "http://twitter.com/statuses/user_timeline/386330001.json",
+    amit:  "http://twitter.com/statuses/user_timeline/386330001.json",
+    astrojs: "http://twitter.com/statuses/user_timeline/601192485.json"
     dotastro: "http://search.twitter.com/search.json?q=%23dotastro"
+  @numFeeds = 3
   
   constructor: ->
     super
@@ -12,7 +14,7 @@ class Tweets extends Spine.Controller
     @getTweets()
 
   getTweets: ->
-    [number, count] = [2, 0]
+    count = 0
     for search, feed of Tweets.feeds
       do (search, feed) =>
         options =
@@ -31,7 +33,7 @@ class Tweets extends Spine.Controller
               item.save()
               @append require('views/tweets')(item)
             count += 1
-            @trigger "render" if count is number
+            @trigger "render" if count is Tweets.numFeeds
         
         $.ajax(options)
 

@@ -3,6 +3,6 @@
   <article class="tweet <%= style %>">
     <div class="name"><%= tweet.name %></div>
     <div class="date"><%= tweet.getDate() %></div>
-    <div class="message"><%= tweet.text %></div>
+    <div class="message"><%- tweet.getMessage() %></div>
   </article>
 <% end %>
