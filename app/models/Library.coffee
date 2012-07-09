@@ -4,4 +4,6 @@ class Library extends Spine.Model
   
   getUrl: -> return @clone_url.split('.git')[0]
   
+  getDocumentation: -> return "http://astrojs.github.com/#{@name}/"
+  
 module.exports = Library

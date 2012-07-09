@@ -40,6 +40,7 @@ class Commits extends Spine.Controller
 
   render: ->
     commits = Commit.sortByDate('date')
+    console.log commits
     @append require('views/commits')(commits)
     
 module.exports = Commits

@@ -10,5 +10,5 @@ class Commit extends Spine.Model
     d = new Date(@date)
     [year, month, day] = [d.getFullYear(), d.getMonth() + 1, d.getDate()]
     return "#{year}-#{month}-#{day}"
-  
+
 module.exports = Commit
