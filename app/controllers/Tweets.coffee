@@ -4,8 +4,9 @@ class Tweets extends Spine.Controller
   @feeds =
     amit:  "http://twitter.com/statuses/user_timeline/386330001.json",
     astrojs: "http://twitter.com/statuses/user_timeline/601192485.json"
-    dotastro: "http://search.twitter.com/search.json?q=%23dotastro"
-  @numFeeds = 3
+    dotastroH: "http://search.twitter.com/search.json?q=%23dotastro"
+    astrojsH: "http://search.twitter.com/search.json?q=%23astrojs"
+  @numFeeds = 4
   
   constructor: ->
     super
