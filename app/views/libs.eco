@@ -1,11 +1,12 @@
 <header class="subsection">Libraries</header>
 <% for project, index in @: %>
-  <% console.log project %>
   <% style = if index % 2 is 0 then "even" else "odd" %>
   <article class="library <%= style %>">
     <header><%= project.name %></header>
     <p class="description"><%= project.description %></p>
     <a href="<%= project.getUrl() %>">repository</a>
+    <% unless project.name is 'astrojs-site': %>
     <a href="<%= project.getDocumentation() %>">documentation</a>
+    <% end %>
   </article>
 <% end %>

@@ -20,7 +20,5 @@ class Main extends Spine.Controller
     
   initControllers: ->
     new Commits(el: @activity)
-    new Tweets(el: @activity)
-    # new Tweets(el: $("#tweets"))
 
 module.exports =  Main
